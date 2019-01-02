@@ -42,8 +42,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOneProblem.cs" />
+    <Compile Include="AddTwoNumbersProblem.cs" />
+    <Compile Include="DivideTwoIntegersProblem.cs" />
+    <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
+    <Compile Include="LongestCommonPrefixProblem.cs" />
+    <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
+    <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
+    <Compile Include="RemoveElementProblem.cs" />
+    <Compile Include="RomanToInteger.cs" />
+    <Compile Include="MergeSortedArrayProblem.cs" />
+    <Compile Include="SearchInsertPositionProblem.cs" />
+    <Compile Include="StringToIntegerProblem.cs" />
+    <Compile Include="ThreeSumProblem.cs" />
+    <Compile Include="Trees\BinaryTreeBuilder.cs" />
+    <Compile Include="Trees\TreeExtensions.cs" />
+    <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="ValidParenthesesProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
