@@ -55,7 +55,9 @@
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
+    <Compile Include="PathSumProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
