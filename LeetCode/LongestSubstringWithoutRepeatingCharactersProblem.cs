@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LeetCode
@@ -7,35 +8,31 @@ namespace LeetCode
   {
     public int LengthOfLongestSubstring(string s)
     {
-      int from = 0;
-      int globalMax = 0;
-      for (int ss = 0; ss < s.Length; ss++)
+      if (s == null)
+        return 0;
+
+      if (s.Length == 1)
+        return 1;
+      
+      HashSet<char> longest = null;
+      HashSet<char> current = null;
+      
+      for (int i = 0; i < s.Length; i++)
       {
-        if (from == s.Length)
-          return 0;
-
-        int max = 0;
-        var sub = new char[s.Length - from];
-        for (int i = from; i < s.Length; i++)
+        current = new HashSet<char>();
+        for (int j = i; j < s.Length; j++)
         {
-          var c = s[i];
-          if (!sub.Contains(c))
+          if (!current.Add(s[j]))
           {
-            sub[i - from] = c;
-            max = Math.Max(max, i - from + 1);
-            continue;
+            break;
           }
-
-          globalMax = Math.Max(max, globalMax);
-          from++;
-          break;
+          
+          if (longest == null || longest.Count < current.Count)
+            longest = current;
         }
-
-        
-        break;
       }
 
-      return globalMax;
+      return longest == null ? 0 : longest.Count;
     }
   }
 }
