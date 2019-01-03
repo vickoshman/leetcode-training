@@ -7,13 +7,10 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var node = new ListNode(1);
-      node.next = new ListNode(2);
-      var cycleNode = node.next.next = new ListNode(3);
-
-      node.next.next.next = cycleNode;
-
-      var result = new LinkedListCycle().HasCycle2(node);
+      var l1 = new ListNode(5);
+      var l2 = new ListNode(5);
+      
+      var result = new AddTwoNumbersProblem().AddTwoNumbers(l1, l2);
 
       Console.WriteLine();
       Console.ReadKey();
