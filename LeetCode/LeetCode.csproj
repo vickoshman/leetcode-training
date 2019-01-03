@@ -48,6 +48,8 @@
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
+    <Compile Include="LinkedListCycle.cs" />
+    <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />

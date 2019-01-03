@@ -2,13 +2,6 @@
 {
   public class AddTwoNumbersProblem
   {
-    public class ListNode
-    {
-      public int val;
-      public ListNode next;
-      public ListNode(int x) { val = x; }
-    }
-
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
     {
       int remainder = 0;
