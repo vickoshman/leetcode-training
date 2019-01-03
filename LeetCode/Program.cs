@@ -13,7 +13,7 @@ namespace LeetCode
 
       node.next.next.next = cycleNode;
 
-      new LinkedListCycle().HasCycle(node);
+      var result = new LinkedListCycle().HasCycle2(node);
 
       Console.WriteLine();
       Console.ReadKey();
