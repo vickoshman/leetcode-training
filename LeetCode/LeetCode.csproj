@@ -46,6 +46,7 @@
     <Compile Include="AddTwoNumbersProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
