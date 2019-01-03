@@ -53,6 +53,7 @@
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
+    <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="Program.cs" />
