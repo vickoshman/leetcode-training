@@ -51,6 +51,7 @@
     <Compile Include="LinkedListCycle.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
+    <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
@@ -61,9 +62,11 @@
     <Compile Include="RemoveElementProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
+    <Compile Include="RotateImageProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
+    <Compile Include="ToLowerCaseProblem.cs" />
     <Compile Include="Trees\BinaryTreeBuilder.cs" />
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />

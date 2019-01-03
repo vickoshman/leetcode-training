@@ -13,8 +13,8 @@ namespace LeetCode
 
       if (s.Length == 1)
         return 1;
-      
-      HashSet<char> longest = null;
+
+      int longest = 0;
       HashSet<char> current = null;
       
       for (int i = 0; i < s.Length; i++)
@@ -27,12 +27,12 @@ namespace LeetCode
             break;
           }
           
-          if (longest == null || longest.Count < current.Count)
-            longest = current;
+          if (longest == 0 || longest < current.Count)
+            longest = current.Count;
         }
       }
 
-      return longest == null ? 0 : longest.Count;
+      return longest;
     }
   }
 }
