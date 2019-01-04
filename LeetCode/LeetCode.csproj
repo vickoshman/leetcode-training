@@ -68,6 +68,7 @@
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
     <Compile Include="RemoveElementProblem.cs" />
+    <Compile Include="RemoveNthNodeFromEndOfListProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
