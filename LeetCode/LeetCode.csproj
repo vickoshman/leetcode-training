@@ -50,6 +50,7 @@
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
