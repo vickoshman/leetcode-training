@@ -48,6 +48,7 @@
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
+    <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="RotateImageProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
+    <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
     <Compile Include="ToLowerCaseProblem.cs" />
     <Compile Include="Trees\BinaryTreeBuilder.cs" />

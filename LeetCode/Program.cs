@@ -7,13 +7,14 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var head = new ListNode(-10);
-      head.next = new ListNode(-3);
-      head.next.next = new ListNode(0);
-      head.next.next.next = new ListNode(5);
-      head.next.next.next.next = new ListNode(9);
+      var head = new ListNode(1);
+      head.next = new ListNode(2);
+      head.next.next = new ListNode(3);
+      head.next.next.next = new ListNode(4);
+      head.next.next.next.next = new ListNode(5);
+      head.next.next.next.next.next = new ListNode(6);
       
-      var result = new ConvertSortedListToBinarySearchTreeProblem().SortedListToBST(head);
+      var result = new SwapNodesInPairsProblem().SwapPairs(head);
 
       Console.WriteLine();
       Console.ReadKey();
