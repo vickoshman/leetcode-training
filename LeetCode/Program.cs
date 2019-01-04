@@ -10,7 +10,7 @@ namespace LeetCode
       
       var lists = new ListNode[]
       {
-        null, null
+        new ListNode(2), null, new ListNode(-1)
       };
       var result = new MergeKSortedListsProblem().MergeKLists(lists);
 
