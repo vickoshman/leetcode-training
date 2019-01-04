@@ -7,7 +7,13 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new ConvertSortedArrayToBinarySearchTreeProblem().SortedArrayToBST(new[] {-10,-3,0,5,9});
+      var head = new ListNode(-10);
+      head.next = new ListNode(-3);
+      head.next.next = new ListNode(0);
+      head.next.next.next = new ListNode(5);
+      head.next.next.next.next = new ListNode(9);
+      
+      var result = new ConvertSortedListToBinarySearchTreeProblem().SortedListToBST(head);
 
       Console.WriteLine();
       Console.ReadKey();
