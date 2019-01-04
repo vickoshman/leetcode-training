@@ -7,10 +7,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var l1 = new ListNode(5);
-      var l2 = new ListNode(5);
-      
-      var result = new LongestSubstringWithoutRepeatingCharactersProblem().LengthOfLongestSubstring("aab");
+      new ConvertSortedArrayToBinarySearchTreeProblem().SortedArrayToBST(new[] {-10,-3,0,5,9});
 
       Console.WriteLine();
       Console.ReadKey();

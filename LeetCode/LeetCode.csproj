@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
+    <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
