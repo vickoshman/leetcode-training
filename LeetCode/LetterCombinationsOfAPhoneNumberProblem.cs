@@ -18,13 +18,16 @@ namespace LeetCode
         { '9', new List<char> { 'w', 'x', 'y', 'z' } }
       };
 
+      var result = new List<string>();
       for (int i = 0; i < digits.Length; i++)
       {
-        var letters = dict[digits[i]];
-
-        for (int l = 0; l < letters.Count; l++)
+        string combination = "";
+        for (int j = 0; j < digits.Length; j++)
         {
-          var letter = letters[l];
+          if (i == j)
+            continue;
+          
+          combination += digits
         }
       }*/
     }

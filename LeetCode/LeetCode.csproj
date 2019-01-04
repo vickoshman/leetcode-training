@@ -44,14 +44,25 @@
   <ItemGroup>
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
+    <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
+    <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
+    <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="IsBalancedTreeProblem.cs" />
+    <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
+    <Compile Include="LinkedListCycle.cs" />
+    <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
+    <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
+    <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
+    <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
+    <Compile Include="PathSumProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
@@ -59,9 +70,11 @@
     <Compile Include="RemoveElementProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
+    <Compile Include="RotateImageProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
+    <Compile Include="ToLowerCaseProblem.cs" />
     <Compile Include="Trees\BinaryTreeBuilder.cs" />
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />
