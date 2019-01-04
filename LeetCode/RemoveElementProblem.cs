@@ -4,24 +4,28 @@
   {
     public int RemoveElement(int[] nums, int val)
     {
-      int length = nums.Length;
-      for (int i = 0; i < length; i++)
+      if (nums == null || nums.Length == 0)
+        return 0;
+
+      int shift = 0;
+      for (int i = 0; i < nums.Length - shift; i++)
       {
-        int value1 = nums[i];
-        if (value1 != val)
+        if (nums[i] != val)
           continue;
 
-        for (int j = i + 1; j < length; j++)
-        {
-          int temp = nums[j];
-          nums[j] = nums[j - 1];
-          nums[j - 1] = temp;
-        }
+        var index = nums.Length - shift - 1;
+        if (index < 0 || index == nums.Length)
+          return 0;
 
-        length--;
+        var last = nums[index];
+        nums[i] = last;
+        shift++;
+
+        if (last == val)
+          i--;
       }
 
-      return length;
+      return nums.Length - shift;
     }
   }
 }

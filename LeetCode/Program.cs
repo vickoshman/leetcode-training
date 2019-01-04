@@ -7,12 +7,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      
-      var lists = new ListNode[]
-      {
-        new ListNode(2), null, new ListNode(-1)
-      };
-      var result = new MergeKSortedListsProblem().MergeKLists(lists);
+      var result = new RemoveElementProblem().RemoveElement(new int[] {3, 2, 2, 3}, 3);
 
       Console.WriteLine();
       Console.ReadKey();
