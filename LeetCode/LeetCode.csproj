@@ -49,6 +49,7 @@
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="IsBalancedTreeProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
     <Compile Include="LinkedListCycle.cs" />
