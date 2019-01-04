@@ -59,6 +59,7 @@
     <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
+    <Compile Include="MergeKSortedListsProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
