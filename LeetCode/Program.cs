@@ -7,7 +7,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new RemoveElementProblem().RemoveElement(new int[] {3, 2, 2, 3}, 3);
+      var result = new PermutationsProblem().Permute(new [] { 1, 2, 3 });
 
       Console.WriteLine();
       Console.ReadKey();

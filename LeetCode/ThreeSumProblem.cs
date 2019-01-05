@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 
 namespace LeetCode
 {
@@ -7,35 +10,37 @@ namespace LeetCode
     public IList<IList<int>> ThreeSum(int[] nums)
     {
       var result = new List<IList<int>>();
-      if (nums.Length < 3)
+
+      if (nums == null || nums.Length < 3)
         return result;
 
-      for (int i = 0; i < nums.Length; i++)
+      Array.Sort(nums);
+
+      int length = nums.Length;
+      for (int i = 4; i < length; i++)
       {
-        for (int j = 0; j < nums.Length; j++)
+        if (nums[i] == nums[i - 1] && nums[i] == nums[i - 2] && nums[i] == nums[i - 3] && nums[i] == nums[i - 4])
         {
-          if (i == j)
-            continue;
-
-          for (int k = 0; k < nums.Length; k++)
+          nums[i - 4] = nums[length - 1];
+          length--;
+        }
+      }
+      
+      for (int i = 0; i < length; i++)
+      {
+        for (int j = i + 1; j < length; j++)
+        {
+          for (int k = j + 1; k < length; k++)
           {
-            if (j == k || i == k)
-              continue;
-
-            var a = nums[i];
-            var b = nums[j];
-            var c = nums[k];
-
-            if (a + b + c != 0)
+            if (nums[i] + nums[j] + nums[k] != 0)
               continue;
 
             bool isDuplicate = false;
-            foreach (var triplet in result)
+            
+            foreach (var arr in result)
             {
-              int ia = triplet.IndexOf(a);
-              int ib = triplet.IndexOf(b);
-              int ic = triplet.IndexOf(c);
-              if (ia != -1 && ib != -1 && ic != -1 && ia != ib && ib != ic)
+              var list = new List<int> { nums[i], nums[j], nums[k] };
+              if (IsDuplicate(arr, list))
               {
                 isDuplicate = true;
                 break;
@@ -43,12 +48,21 @@ namespace LeetCode
             }
 
             if (!isDuplicate)
-              result.Add(new List<int> { a, b, c });
+              result.Add(new List<int> { nums[i], nums[j], nums[k] });
           }
         }
       }
 
       return result;
+    }
+
+    public bool IsDuplicate(IList<int> first, List<int> second)
+    {
+      second.Remove(first[0]);
+      second.Remove(first[1]);
+      second.Remove(first[2]);
+
+      return second.Count == 0;
     }
   }
 }
