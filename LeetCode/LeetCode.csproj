@@ -45,9 +45,12 @@
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
+    <Compile Include="CombinationSumProblem.cs" />
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
+    <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
+    <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />

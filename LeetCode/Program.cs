@@ -7,7 +7,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new PermuteUniqueProblem().PermuteUnique(new [] { 1, 1, 2 });
+      var result = new FindFirstAndLastPositionOfElementInSortedArrayProblem().SearchRange(new [] { 2, 2 }, 2);
 
       Console.WriteLine();
       Console.ReadKey();
