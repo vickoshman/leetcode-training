@@ -7,7 +7,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new PermutationsProblem().Permute(new [] { 1, 2, 3 });
+      var result = new PermuteUniqueProblem().PermuteUnique(new [] { 1, 1, 2 });
 
       Console.WriteLine();
       Console.ReadKey();
