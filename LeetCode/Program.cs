@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using LeetCode.Trees;
 
 namespace LeetCode
@@ -7,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new FindFirstAndLastPositionOfElementInSortedArrayProblem().SearchRange(new [] { 2, 2 }, 2);
+      var result = new ExcelSheetColumnTitleProblem().ConvertToTitle(962);
 
       Console.WriteLine();
       Console.ReadKey();

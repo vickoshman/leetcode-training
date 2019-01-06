@@ -49,10 +49,12 @@
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
+    <Compile Include="ExcelSheetColumnTitleProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
     <Compile Include="RemoveElementProblem.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListProblem.cs" />
+    <Compile Include="ReverseLinkedListIIProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
