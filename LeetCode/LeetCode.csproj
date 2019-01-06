@@ -45,6 +45,7 @@
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
+    <Compile Include="BinaryTreePathsProblem.cs" />
     <Compile Include="CombinationSumProblem.cs" />
     <Compile Include="ContainsDuplicateProblem.cs" />
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
