@@ -94,6 +94,7 @@
     <Compile Include="Trees\BinaryTreeBuilder.cs" />
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
   </ItemGroup>
   <ItemGroup>
