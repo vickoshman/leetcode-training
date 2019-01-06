@@ -9,6 +9,23 @@ namespace LeetCode
       if (nums == null || nums.Length < 2)
         return;
 
+      int pos = 0;
+      for (int i = 0; i < nums.Length; i++)
+      {
+        if (nums[i] != 0)
+        {
+          var tmp = nums[i];
+          nums[i] = nums[pos++];
+          nums[pos - 1] = tmp;
+        }
+      }
+    }
+
+    public void MoveZeroes2(int[] nums)
+    {
+      if (nums == null || nums.Length < 2)
+        return;
+
       int pos = -1;
       for (int i = 0; i < nums.Length; i++)
       {
