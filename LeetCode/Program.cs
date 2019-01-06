@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new ExcelSheetColumnTitleProblem().ConvertToTitle(962);
+      new MoveZeroesProblem().MoveZeroes(new int[] {0, 1, 0, 3, 12});
 
       Console.WriteLine();
       Console.ReadKey();
