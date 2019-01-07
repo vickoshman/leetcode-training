@@ -46,6 +46,7 @@
     <Compile Include="AddTwoNumbersProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
     <Compile Include="BinaryTreePathsProblem.cs" />
+    <Compile Include="CombinationsProblem.cs" />
     <Compile Include="CombinationSumProblem.cs" />
     <Compile Include="ContainsDuplicateProblem.cs" />
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
+    <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
@@ -84,12 +86,15 @@
     <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
     <Compile Include="RemoveElementProblem.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListProblem.cs" />
+    <Compile Include="RestoreIpAddressesProblem.cs" />
     <Compile Include="ReverseLinkedListIIProblem.cs" />
+    <Compile Include="ReverseStringProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
+    <Compile Include="SubsetsProblem.cs" />
     <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
     <Compile Include="ToLowerCaseProblem.cs" />

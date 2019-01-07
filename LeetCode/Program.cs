@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new MoveZeroesProblem().MoveZeroes(new int[] {0, 1, 0, 3, 12});
+      new SubsetsProblem().Subsets(new int[] { 1, 2, 3 });
 
       Console.WriteLine();
       Console.ReadKey();
