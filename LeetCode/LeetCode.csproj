@@ -76,6 +76,7 @@
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
+    <Compile Include="PartitionListProblem.cs" />
     <Compile Include="PathSumProblem.cs" />
     <Compile Include="PermutationsProblem.cs" />
     <Compile Include="PermuteUniqueProblem.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
+    <Compile Include="SimplifyPathProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="SubsetsIIProblem.cs" />
     <Compile Include="SubsetsProblem.cs" />

@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new SubsetsProblem().Subsets(new int[] { 1, 2, 3 });
+      new SimplifyPathProblem().SimplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///");
 
       Console.WriteLine();
       Console.ReadKey();

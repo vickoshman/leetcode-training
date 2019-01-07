@@ -1,68 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 
 namespace LeetCode
 {
   public class ThreeSumProblem
   {
+    private static void Backtrack(int[] nums, int offset, List<int> snippet, List<IList<int>> result)
+    {
+      if (snippet.Count == 3 && snippet[0] + snippet[1] + snippet[2] == 0)
+      {
+        result.Add(new List<int>(snippet));
+        return;
+      }
+
+      for (int i = offset; i < nums.Length; i++)
+      {
+        
+
+        snippet.Add(nums[i]);
+        
+
+        Backtrack(nums, i + 1, snippet, result);
+        if (i > 0 && nums[i] == nums[i - 1])
+        {
+          continue;
+        }
+
+        snippet.RemoveAt(snippet.Count - 1);
+      }
+    }
+
     public IList<IList<int>> ThreeSum(int[] nums)
     {
       var result = new List<IList<int>>();
-
-      if (nums == null || nums.Length < 3)
-        return result;
-
       Array.Sort(nums);
-
-      int length = nums.Length;
-      for (int i = 4; i < length; i++)
-      {
-        if (nums[i] == nums[i - 1] && nums[i] == nums[i - 2] && nums[i] == nums[i - 3] && nums[i] == nums[i - 4])
-        {
-          nums[i - 4] = nums[length - 1];
-          length--;
-        }
-      }
-      
-      for (int i = 0; i < length; i++)
-      {
-        for (int j = i + 1; j < length; j++)
-        {
-          for (int k = j + 1; k < length; k++)
-          {
-            if (nums[i] + nums[j] + nums[k] != 0)
-              continue;
-
-            bool isDuplicate = false;
-            
-            foreach (var arr in result)
-            {
-              var list = new List<int> { nums[i], nums[j], nums[k] };
-              if (IsDuplicate(arr, list))
-              {
-                isDuplicate = true;
-                break;
-              }
-            }
-
-            if (!isDuplicate)
-              result.Add(new List<int> { nums[i], nums[j], nums[k] });
-          }
-        }
-      }
-
+      Backtrack(nums, 0, new List<int>(), result);
       return result;
-    }
-
-    public bool IsDuplicate(IList<int> first, List<int> second)
-    {
-      second.Remove(first[0]);
-      second.Remove(first[1]);
-      second.Remove(first[2]);
-
-      return second.Count == 0;
     }
   }
 }
