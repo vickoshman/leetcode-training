@@ -4,22 +4,23 @@ namespace LeetCode
 {
   public class CombinationSumProblem
   {
-    private void Permute(int[] candidates, int target, int start, List<int> current, List<IList<int>> result)
+    private void Permute(int[] candidates, int target, int offset, List<int> snippet, List<IList<int>> result)
     {
-      if (target <= 0)
-        return;
-
       if (target == 0)
       {
-        result.Add(current);
+        result.Add(new List<int>(snippet));
         return;
       }
 
-      for (int i = start; i < candidates.Length; i++)
+      for (int i = offset; i < candidates.Length; i++)
       {
-        current.Add(candidates[i]);
-        Permute(candidates, target - candidates[i], i, current, result);
-        current.RemoveAt(current.Count - 1);
+        var value = candidates[i];
+        if (value > target)
+          continue;
+
+        snippet.Add(value);
+        Permute(candidates, target - value, i, snippet, result);
+        snippet.RemoveAt(snippet.Count - 1);
       }
     }
 
