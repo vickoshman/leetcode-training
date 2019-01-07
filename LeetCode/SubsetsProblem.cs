@@ -20,6 +20,7 @@ namespace LeetCode
       }
 
       selectedSoFar.Add(nums[decisionPoint]);
+
       Generate(nums, decisionPoint + 1, selectedSoFar, powerSet);
       selectedSoFar.RemoveAt(selectedSoFar.Count - 1);
       Generate(nums, decisionPoint + 1, selectedSoFar, powerSet);

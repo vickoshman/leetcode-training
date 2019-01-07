@@ -2,53 +2,33 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Security.Principal;
 
 namespace LeetCode
 {
   public class CombinationsProblem
   {
-    private void Backtrack(int[] array, int from, List<IList<int>> result)
+    public void ExploreCombinations(int n, int k, int offset, List<int> snippet, List<IList<int>> result)
     {
-      if (from == array.Length - 1)
+      if (snippet.Count == k)
       {
-        result.Add(array.ToList());
+        result.Add(new List<int>(snippet));
         return;
       }
 
-      for (int i = from; i < array.Length; i++)
+      int spaceLeftInSnippet = k - snippet.Count;
+      for (int i = offset; i <= n && spaceLeftInSnippet <= n - i + 1; i++)
       {
-        Swap(array, from, i);
-        Backtrack(array, from + 1, result);
-        Swap(array, from, i);
+        snippet.Add(i);
+        ExploreCombinations(n, k, i + 1, snippet, result);
+        snippet.RemoveAt(snippet.Count - 1);
       }
-    }
-
-    private void Swap(int[] array, int i, int j)
-    {
-      var tmp = array[i];
-      array[i] = array[j];
-      array[j] = tmp;
     }
 
     public IList<IList<int>> Combine(int n, int k)
     {
       var result = new List<IList<int>>();
-
-      int[] array = new int[k];
-      for (int i = 0; i < n; i++)
-      {
-        for (int j = i; j < i+k; j++)
-        {
-          array[j - i] = j + 1;
-        }
-
-        if (n % k == 0)
-        {
-          Backtrack(array, 0, result);
-        }
-      }
-
-      
+      ExploreCombinations(n, k, 1, new List<int>(), result);
       return result;
     }
   }
