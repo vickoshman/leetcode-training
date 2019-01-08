@@ -4,23 +4,36 @@
   {
     public void Merge(int[] nums1, int m, int[] nums2, int n)
     {
-      int index = m;
-      for (int i = 0; i < n; i++)
-      {
-        nums1[index++] = nums2[i];
-      }
+      n--;
+      m--;
 
-      for (int i = 0; i <= nums1.Length - 2; i++)
+      int pos = nums1.Length - 1;
+      while (n >= 0 || m >= 0)
       {
-        for (int j = 0; j <= nums1.Length - 2; j++)
+        if (m == -1)
         {
-          if (nums1[j] > nums1[j + 1])
-          {
-            int temp = nums1[j + 1];
-            nums1[j + 1] = nums1[j];
-            nums1[j] = temp;
-          }
+          nums1[pos--] = nums2[n--];
+          continue;
         }
+
+        if (n == -1)
+        {
+          nums1[pos--] = nums1[m--];
+          continue;
+        }
+
+        if (nums1[m] > nums2[n])
+        {
+          nums1[pos] = nums1[m];
+          m--;
+        }
+        else
+        {
+          nums1[pos] = nums2[n];
+          n--;
+        }
+
+        pos--;
       }
     }
   }

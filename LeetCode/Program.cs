@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new SimplifyPathProblem().SimplifyPath("/a/./b///../c/../././../d/..//../e/./f/./g/././//.//h///././/..///");
+      new MergeSortedArrayProblem().Merge(new [] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3);
 
       Console.WriteLine();
       Console.ReadKey();
