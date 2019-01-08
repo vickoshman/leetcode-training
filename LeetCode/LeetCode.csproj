@@ -90,6 +90,7 @@
     <Compile Include="RestoreIpAddressesProblem.cs" />
     <Compile Include="ReverseLinkedListIIProblem.cs" />
     <Compile Include="ReverseStringProblem.cs" />
+    <Compile Include="ReverseVowelsProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />

@@ -8,10 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new WordSearchProblem().Exist(new[,]
-      {
-        {'a' }
-      }, "ab");
+      new ReverseVowelsProblem().ReverseVowels("race car");
 
       Console.WriteLine();
       Console.ReadKey();
