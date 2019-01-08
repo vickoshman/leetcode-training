@@ -107,6 +107,7 @@
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
+    <Compile Include="WordSearchProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
