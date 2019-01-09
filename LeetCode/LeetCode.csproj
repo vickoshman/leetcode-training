@@ -79,6 +79,7 @@
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="PartitionListProblem.cs" />
+    <Compile Include="PascalsTriangleIIProblem.cs" />
     <Compile Include="PascalsTriangleProblem.cs" />
     <Compile Include="PathSumProblem.cs" />
     <Compile Include="PermutationsProblem.cs" />
