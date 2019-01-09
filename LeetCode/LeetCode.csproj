@@ -59,6 +59,7 @@
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="IntersectionOfTwoArraysIIProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysProblem.cs" />
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
