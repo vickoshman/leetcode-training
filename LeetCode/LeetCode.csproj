@@ -104,6 +104,7 @@
     <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
     <Compile Include="ToLowerCaseProblem.cs" />
+    <Compile Include="TopKFrequentElementsProblem.cs" />
     <Compile Include="Trees\BinaryTreeBuilder.cs" />
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />
