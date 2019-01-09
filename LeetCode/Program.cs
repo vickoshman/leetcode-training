@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new ReverseVowelsProblem().ReverseVowels("race car");
+      new SingleNumberProblem().SingleNumber(new int[] { 2,2,1 } );
 
       Console.WriteLine();
       Console.ReadKey();

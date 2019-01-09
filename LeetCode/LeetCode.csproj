@@ -99,6 +99,7 @@
     <Compile Include="ScrambleStringProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
+    <Compile Include="SingleNumberProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="SubsetsIIProblem.cs" />
     <Compile Include="SubsetsProblem.cs" />
