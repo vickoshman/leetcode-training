@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new SingleNumberProblem().SingleNumber(new int[] { 2,2,1 } );
+      new ZigZagConversionProblem().Convert("PAYPALISHIRING", 4);
 
       Console.WriteLine();
       Console.ReadKey();

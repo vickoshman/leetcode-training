@@ -116,6 +116,7 @@
     <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
     <Compile Include="WordSearchProblem.cs" />
+    <Compile Include="ZigZagConversionProblem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
