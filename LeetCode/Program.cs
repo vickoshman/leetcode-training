@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new GroupAnagramsProblem().GroupAnagrams(new []{"tea", "and", "ace", "ad", "eat", "dans"});
+      var result = new LongestPalindromicSubstring().LongestPalindrome("ajja");
 
       Console.WriteLine();
       Console.ReadKey();
