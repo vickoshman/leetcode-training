@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new ZigZagConversionProblem().Convert("PAYPALISHIRING", 4);
+      var result = new GroupAnagramsProblem().GroupAnagrams(new []{"tea", "and", "ace", "ad", "eat", "dans"});
 
       Console.WriteLine();
       Console.ReadKey();

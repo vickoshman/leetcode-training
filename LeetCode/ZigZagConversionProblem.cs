@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data;
 using System.Globalization;
+using System.Text;
 
 namespace LeetCode
 {
@@ -33,7 +34,7 @@ namespace LeetCode
         isDiag = !isDiag;
       }
 
-      char[] result = new char[s.Length];
+      var sb = new StringBuilder(s.Length);
       int index = 0;
       for (int j = 0; j < numRows; j++)
       {
@@ -41,11 +42,11 @@ namespace LeetCode
         {
           var row = zig[i];
           if (row.Length > j && index < s.Length && row[j] != '\0')
-            result[index++] = row[j];
+            sb.Append(row[j]);
         }
       }
 
-      return new string(result);
+      return sb.ToString();
     }
   }
 }

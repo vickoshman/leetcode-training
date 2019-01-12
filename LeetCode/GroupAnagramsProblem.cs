@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Globalization;
+using System.Linq;
 
 namespace LeetCode
 {
@@ -10,52 +13,60 @@ namespace LeetCode
       if (strs == null || strs.Length == 0)
         return null;
 
-      var result = new List<IList<string>>();
+      var anagramsByLength = new Dictionary<int, List<IList<string>>>();
 
-      var used = new HashSet<int>();
       for (int i = 0; i < strs.Length; i++)
       {
-        if (!used.Add(i))
-          continue;
+        var currentLength = strs[i].Length;
 
-        var current = new List<string>() {strs[i]};
-        for (int j = i + 1; j < strs.Length; j++)
+        if (!anagramsByLength.ContainsKey(currentLength))
         {
-          if (used.Contains(j))
-            continue;
+          var group = new List<IList<string>>();
+          group.Add(new List<string> { strs[i] });
 
-          if (IsAnagram(strs[i], strs[j]))
+          anagramsByLength.Add(currentLength, group);
+          continue;
+        }
+
+        IList<string> toAdd = null;
+        foreach (var group in anagramsByLength[currentLength])
+        {
+          if (IsAnagram(strs[i], @group[0]))
           {
-            current.Add(strs[j]);
-            used.Add(j);
+            toAdd = @group;
+            break;
           }
         }
 
-        result.Add(current);
+        if (toAdd == null)
+        {
+          anagramsByLength[currentLength].Add(new List<string>() { strs[i] });
+        }
+        else
+        {
+          toAdd.Add(strs[i]);
+        }
       }
+
+      var result = new List<IList<string>>();
+
+      foreach (var kvp in anagramsByLength)
+        result.AddRange(kvp.Value);
 
       return result;
     }
 
-    public bool IsAnagram(string str1, string str2)
+    private bool IsAnagram(string s, string s1)
     {
-      if (str1.Length != str2.Length)
-        return false;
-
-      char[] chars = new char[26];
-      for (int i = 0; i < str1.Length; i++)
+      var set = new List<char>();
+      foreach (char c in s)
+        set.Add(c);
+      foreach (char c in s1)
       {
-        chars[str1[i] - 'a']++;
-        chars[str2[i] - 'a']--;
+        set.Remove(c);
       }
 
-      for (int i = 0; i < chars.Length; i++)
-      {
-        if (chars[i] != 0)
-          return false;
-      }
-
-      return true;
+      return set.Count == 0;
     }
   }
 }

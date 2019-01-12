@@ -57,6 +57,7 @@
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
+    <Compile Include="FourSumProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
