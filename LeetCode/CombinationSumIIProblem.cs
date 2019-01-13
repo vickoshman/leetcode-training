@@ -8,36 +8,26 @@ namespace LeetCode
 {
   public class CombinationSumIIProblem
   {
-    private void Find(List<int> candidates, int target, int offset, HashSet<int> usedIndexes, List<int> soFar, HashSet<string> resultKeys, List<IList<int>> result)
+    private void Find(int[] candidates, int target, int offset, List<int> soFar, List<IList<int>> result)
     {
-      if (target < 0 || offset > candidates.Count)
+      if (target < 0 || offset > candidates.Length)
         return;
 
       if (target == 0)
       {
-        var toAdd = new List<int>(soFar);
-        toAdd.Sort();
-        string sb = "";
-        foreach (var key in toAdd)
-          sb += ":" + key;
-
-        if (resultKeys.Add(sb))
-          result.Add(toAdd);
-
-        return;
+        result.Add(new List<int>(soFar));
       }
 
-      for (int i = offset; i < candidates.Count; i++)
+      int prev = -1;
+      for (int i = offset; i < candidates.Length; i++)
       {
-        if (usedIndexes.Contains(i))
-          continue;
-
-        soFar.Add(candidates[i]);
-        usedIndexes.Add(i);
-
-        Find(candidates, target - candidates[i], offset + 1, usedIndexes, soFar, resultKeys, result);
-        soFar.RemoveAt(soFar.Count - 1);
-        usedIndexes.Remove(i);
+        if (prev != candidates[i])
+        {
+          soFar.Add(candidates[i]);
+          Find(candidates, target - candidates[i], i + 1, soFar, result);
+          soFar.RemoveAt(soFar.Count - 1);
+          prev = candidates[i];
+        }
       }
     }
 
@@ -48,13 +38,8 @@ namespace LeetCode
 
       var result = new List<IList<int>>();
 
-      var array = new List<int>();
-      for (int i = 0 ; i < candidates.Length; i++)
-        if (candidates[i] <= target)
-          array.Add(candidates[i]);
-
-      array.Sort();
-      Find(array, target, 0, new HashSet<int>(), new List<int>(), new HashSet<string>(), result);
+      Array.Sort(candidates);
+      Find(candidates, target, 0, new List<int>(), result);
 
       return result;
     }
