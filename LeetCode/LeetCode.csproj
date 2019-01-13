@@ -101,7 +101,9 @@
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
+    <Compile Include="RotateListProblem.cs" />
     <Compile Include="ScrambleStringProblem.cs" />
+    <Compile Include="SearchInRotatedSortedArrayProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
     <Compile Include="SingleNumberProblem.cs" />
