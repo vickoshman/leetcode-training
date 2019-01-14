@@ -79,6 +79,7 @@
     <Compile Include="MaximumSubarrayProblem.cs" />
     <Compile Include="MergeKSortedListsProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="MissingNumberProblem.cs" />
     <Compile Include="MoveZeroesProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
