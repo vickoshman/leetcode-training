@@ -2,25 +2,27 @@
 {
   public class RangeSumQueryImmutableProblem
   {
-    private readonly int[] _nums;
-    public NumArray(int[] nums)
+    private readonly int[] _sums;
+    public RangeSumQueryImmutableProblem(int[] nums)
     {
-      _nums = nums;
+      if (nums == null)
+        return;
+
+      _sums = new int[nums.Length + 1];
+      _sums[0] = 0;
+      for (int i = 0; i < nums.Length; i++)
+        _sums[i + 1] = _sums[i] + nums[i];
     }
 
     public int SumRange(int i, int j)
     {
-      if (_nums == null)
+      if (_sums == null)
         return 0;
 
-      if (i < 0 || j >= _nums.Length || i > j)
+      if (i < 0 || j >= _sums.Length - 1 || i > j)
         return 0;
-
-      int sum = 0;
-      for (int index = i; index <= j; index++)
-        sum += _nums[index];
-
-      return sum;
+      
+      return _sums[j + 1] - _sums[i];
     }
   }
 }
