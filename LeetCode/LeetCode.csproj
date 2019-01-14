@@ -57,6 +57,7 @@
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
+    <Compile Include="FindTheDifferenceProblem.cs" />
     <Compile Include="FirstBadVersionProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="FourSumProblem.cs" />
