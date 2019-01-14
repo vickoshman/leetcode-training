@@ -91,6 +91,7 @@
     <Compile Include="PowerOfTwoProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeSumQueryImmutableProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
     <Compile Include="RemoveElementProblem.cs" />
@@ -120,6 +121,7 @@
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
+    <Compile Include="WordPatternProblem.cs" />
     <Compile Include="WordSearchProblem.cs" />
     <Compile Include="ZigZagConversionProblem.cs" />
   </ItemGroup>
