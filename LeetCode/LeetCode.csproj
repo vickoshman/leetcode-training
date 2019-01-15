@@ -122,6 +122,7 @@
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="ValidaAnagramProblem.cs" />
+    <Compile Include="ValidPalindromeProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
     <Compile Include="WordPatternProblem.cs" />
     <Compile Include="WordSearchProblem.cs" />
