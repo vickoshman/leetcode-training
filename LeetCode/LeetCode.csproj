@@ -115,6 +115,7 @@
     <Compile Include="SubsetsIIProblem.cs" />
     <Compile Include="SubsetsProblem.cs" />
     <Compile Include="SwapNodesInPairsProblem.cs" />
+    <Compile Include="SymmetricTreeProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
     <Compile Include="ToLowerCaseProblem.cs" />
     <Compile Include="TopKFrequentElementsProblem.cs" />
