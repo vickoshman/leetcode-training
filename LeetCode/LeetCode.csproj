@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
+    <Compile Include="BestTimeToBuyAndSellStockProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalProblem.cs" />
     <Compile Include="BinaryTreePathsProblem.cs" />
