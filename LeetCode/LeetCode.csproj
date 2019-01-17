@@ -99,6 +99,7 @@
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedListProblem.cs" />
     <Compile Include="RemoveElementProblem.cs" />
+    <Compile Include="RemoveLinkedListElementProblem.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListProblem.cs" />
     <Compile Include="RestoreIpAddressesProblem.cs" />
     <Compile Include="ReverseLinkedListIIProblem.cs" />

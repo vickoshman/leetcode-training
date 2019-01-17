@@ -10,7 +10,11 @@ namespace LeetCode
       for (int i = 0; i < nums.Length; i++)
       {
         if (dic.ContainsKey(nums[i]))
-          dic[nums[i]]++;
+        {
+          int cur = dic[nums[i]]++;
+          if (cur > nums.Length / 2)
+            return nums[i];
+        }
         else
           dic.Add(nums[i], 1);
       }
