@@ -76,6 +76,7 @@
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
+    <Compile Include="MajorityElementProblem.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="MaximumSubarrayProblem.cs" />
     <Compile Include="MergeKSortedListsProblem.cs" />

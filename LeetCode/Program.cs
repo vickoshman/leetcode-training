@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var result = new ValidPalindromeProblem().IsPalindrome("A man, a plan, a canal: Panama");
+      Console.WriteLine(25%26);
 
       Console.WriteLine();
       Console.ReadKey();
