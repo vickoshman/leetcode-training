@@ -16,6 +16,26 @@ namespace LeetCode
         Traverse(root.right, result);
     }
 
+    private void Traverse2(TreeNode root, IList<int> result)
+    {
+      var stack = new Stack<TreeNode>();
+      var node = root;
+      while (stack.Count > 0 || node != null)
+      {
+        if (node != null)
+        {
+          stack.Push(node);
+          node = node.left;
+        }
+        else
+        {
+          node = stack.Pop();
+          result.Add(node.val);
+          node = node.right;
+        }
+      }
+    }
+
     public IList<int> InorderTraversal(TreeNode root)
     {
       var result = new List<int>();
@@ -23,7 +43,7 @@ namespace LeetCode
       if (root == null)
         return result;
 
-      Traverse(root, result);
+      Traverse2(root, result);
       return result;
     }
   }
