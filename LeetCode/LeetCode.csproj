@@ -66,6 +66,7 @@
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="ImplementQueueUsingStacksProblem.cs" />
+    <Compile Include="ImplementStackUsingQueuesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysIIProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysProblem.cs" />
