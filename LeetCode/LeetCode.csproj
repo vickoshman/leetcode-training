@@ -71,6 +71,7 @@
     <Compile Include="IntersectionOfTwoArraysIIProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysProblem.cs" />
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
+    <Compile Include="InvertBinaryTreeProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="MoveZeroesProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
+    <Compile Include="PalindomeLinkedListProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="PartitionListProblem.cs" />
     <Compile Include="PascalsTriangleIIProblem.cs" />
