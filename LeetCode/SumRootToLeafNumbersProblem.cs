@@ -7,27 +7,22 @@ namespace LeetCode
 {
   public class SumRootToLeafNumbersProblem
   {
-    public void Sum(TreeNode root, List<int> soFar, ref int sum)
+    public void Sum(TreeNode root, int soFar, ref int sum)
     {
-      soFar.Add(root.val);
+      soFar *= 10;
+      soFar += root.val;
 
       if (root.left == null && root.right == null)
       {
-        int num = 0;
-        foreach (var item in soFar)
-        {
-          num *= 10;
-          num += item;
-        }
-
-        sum += num;
+        sum += soFar;
+        return;
       }
 
       if (root.left != null)
-        Sum(root.left, soFar.ToList(), ref sum);
+        Sum(root.left, soFar, ref sum);
 
       if (root.right != null)
-        Sum(root.right, soFar.ToList(), ref sum);
+        Sum(root.right, soFar, ref sum);
     }
 
     public int SumNumbers(TreeNode root)
@@ -36,7 +31,7 @@ namespace LeetCode
         return 0;
 
       int sum = 0;
-      Sum(root, new List<int>(), ref sum);
+      Sum(root, 0, ref sum);
       return sum;
     }
   }
