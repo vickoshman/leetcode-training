@@ -99,6 +99,7 @@
     <Compile Include="PartitionListProblem.cs" />
     <Compile Include="PascalsTriangleIIProblem.cs" />
     <Compile Include="PascalsTriangleProblem.cs" />
+    <Compile Include="PathSumIIIProblem.cs" />
     <Compile Include="PathSumIIProblem.cs" />
     <Compile Include="PathSumProblem.cs" />
     <Compile Include="PermutationSequenceProblem.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="SubsetsIIProblem.cs" />
     <Compile Include="SubsetsProblem.cs" />
+    <Compile Include="SumRootToLeafNumbersProblem.cs" />
     <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="SymmetricTreeProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
