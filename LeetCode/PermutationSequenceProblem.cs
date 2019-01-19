@@ -23,6 +23,9 @@ namespace LeetCode
 
       for (int i = 1; i <= n; i++)
       {
+        if (result != "")
+          return;
+
         if (soFar.Contains(i))
           continue;
 
