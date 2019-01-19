@@ -8,10 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var head = new ListNode(1);
-      head.next = new ListNode(2);
-
-      new PalindomeLinkedListProblem().IsPalindrome(head);
+      new AddDigitsProblem().AddDigits(38);
 
       Console.WriteLine();
       Console.ReadKey();

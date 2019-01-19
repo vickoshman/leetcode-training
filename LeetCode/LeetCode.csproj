@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDigitsProblem.cs" />
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
     <Compile Include="BestTimeToBuyAndSellStockProblem.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
+    <Compile Include="LowestCommonAncestorOfABinarySearchTreeProblem.cs" />
     <Compile Include="MajorityElementProblem.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="MaximumSubarrayProblem.cs" />
