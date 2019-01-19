@@ -21,7 +21,7 @@ namespace LeetCode
         _stack.Clear();
         _stack.Push(x);
 
-        foreach (var item in _stack)
+        foreach (var item in tmp)
           _stack.Push(item);
       }
 
