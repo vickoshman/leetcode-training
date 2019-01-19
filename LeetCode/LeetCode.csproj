@@ -100,6 +100,7 @@
     <Compile Include="PascalsTriangleIIProblem.cs" />
     <Compile Include="PascalsTriangleProblem.cs" />
     <Compile Include="PathSumProblem.cs" />
+    <Compile Include="PermutationSequenceProblem.cs" />
     <Compile Include="PermutationsProblem.cs" />
     <Compile Include="PermuteUniqueProblem.cs" />
     <Compile Include="PowerOfTwoProblem.cs" />

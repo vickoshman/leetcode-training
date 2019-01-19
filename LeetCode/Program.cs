@@ -8,9 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var head = new ListNode(3);
-      head.next = new ListNode(5);
-      new ReverseLinkedListIIProblem().ReverseBetween(head, 1, 2);
+      new PermutationSequenceProblem().GetPermutation(3, 3);
 
       Console.WriteLine();
       Console.ReadKey();
