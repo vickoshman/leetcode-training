@@ -91,6 +91,7 @@
     <Compile Include="MoveZeroesProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
+    <Compile Include="NimGameProblem.cs" />
     <Compile Include="PalindomeLinkedListProblem.cs" />
     <Compile Include="PalindromeNumberProblem.cs" />
     <Compile Include="PartitionListProblem.cs" />
