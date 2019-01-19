@@ -8,7 +8,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new AddDigitsProblem().AddDigits(38);
+      new ValidPerfectSquareProblem().IsPerfectSquare(16);
 
       Console.WriteLine();
       Console.ReadKey();
