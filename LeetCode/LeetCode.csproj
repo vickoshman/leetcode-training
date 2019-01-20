@@ -88,6 +88,7 @@
     <Compile Include="LinkedListCycleProblem.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
+    <Compile Include="LongestConsecutiveSequenceProblem.cs" />
     <Compile Include="LongestPalindromicSubstringProblem.cs" />
     <Compile Include="LongestSubstringWithoutRepeatingCharactersProblem.cs" />
     <Compile Include="LowestCommonAncestorOfABinarySearchTreeProblem.cs" />

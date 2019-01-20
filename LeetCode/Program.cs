@@ -9,7 +9,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new MinSubArrayLenProblem().MinSubArrayLen(213, new int[] { 12, 28, 83, 4, 25, 26, 25, 2, 25, 25, 25, 12 });
+      new FindUniqueCharacterInAStringProblem().FirstUniqChar("loveleetcode");
 
       Console.WriteLine();
       Console.ReadKey();
