@@ -66,6 +66,7 @@
     <Compile Include="FindMinimumInRotatedSortedArrayProblem.cs" />
     <Compile Include="FindPeakElementProblem.cs" />
     <Compile Include="FindTheDifferenceProblem.cs" />
+    <Compile Include="FindUniqueCharacterInAStringProblem.cs" />
     <Compile Include="FirstBadVersionProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="FlattenBinaryTreeToLinkedListProblem.cs" />
