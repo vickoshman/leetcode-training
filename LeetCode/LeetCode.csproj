@@ -63,6 +63,7 @@
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
+    <Compile Include="FindPeakElementProblem.cs" />
     <Compile Include="FindTheDifferenceProblem.cs" />
     <Compile Include="FirstBadVersionProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
     <Compile Include="InvertBinaryTreeProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
+    <Compile Include="LargestNumberProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
     <Compile Include="LinkedListCycle.cs" />
