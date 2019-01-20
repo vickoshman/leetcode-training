@@ -16,8 +16,12 @@ namespace LeetCode
 
       for (int i = from; i < 10; i++)
       {
+        if (sumSoFar + i > n)
+          return;
+
         soFar.Add(i);
         sumSoFar += i;
+
         Helper(k, n, i + 1, sumSoFar, soFar, result);
         soFar.RemoveAt(soFar.Count - 1);
         sumSoFar -= i;
