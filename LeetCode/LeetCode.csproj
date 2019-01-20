@@ -68,6 +68,7 @@
     <Compile Include="FindTheDifferenceProblem.cs" />
     <Compile Include="FirstBadVersionProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
+    <Compile Include="FlattenBinaryTreeToLinkedListProblem.cs" />
     <Compile Include="FourSumProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
     <Compile Include="LinkedListCycle.cs" />
+    <Compile Include="LinkedListCycleProblem.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestPalindromicSubstringProblem.cs" />

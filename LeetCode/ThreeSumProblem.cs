@@ -1,40 +1,78 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode
 {
   public class ThreeSumProblem
   {
-    private static void Backtrack(int[] nums, int offset, List<int> snippet, List<IList<int>> result)
-    {
-      if (snippet.Count == 3 && snippet[0] + snippet[1] + snippet[2] == 0)
-      {
-        result.Add(new List<int>(snippet));
-        return;
-      }
-
-      for (int i = offset; i < nums.Length; i++)
-      {
-        
-
-        snippet.Add(nums[i]);
-        
-
-        Backtrack(nums, i + 1, snippet, result);
-        if (i > 0 && nums[i] == nums[i - 1])
-        {
-          continue;
-        }
-
-        snippet.RemoveAt(snippet.Count - 1);
-      }
-    }
-
     public IList<IList<int>> ThreeSum(int[] nums)
     {
       var result = new List<IList<int>>();
-      Array.Sort(nums);
-      Backtrack(nums, 0, new List<int>(), result);
+
+      if (nums.Length < 3)
+        return result;
+      
+      var list = nums.ToList();
+      list.Sort();
+
+      var prev = list[0];
+      int met = 1;
+
+      for (int i = 1; i < list.Count; i++)
+      {
+        if (list[i] != prev)
+        {
+          prev = list[i];
+          met = 1;
+          continue;
+        }
+
+        if (list[i] == prev && met > 2)
+          list.RemoveAt(i);
+      }
+
+      var set = new HashSet<string>();
+
+      for (int i = 0; i < list.Count; i++)
+      {
+        if (list[i] > 0)
+          return result;
+
+        if (list[i] + list[list.Count - 1] * 2 < 0)
+          continue;
+
+        for (int j = i + 1; j < list.Count; j++)
+        {
+          if (list[i] + list[j] > 0)
+            break;
+
+          var target = -(list[i] + list[j]);
+
+          if (list[list.Count - 1] < target)
+            break;
+
+          var key = list[i] + ":" + list[j];
+          if (set.Contains(key))
+            continue;
+
+          for (int k = j + 1; k < list.Count; k++)
+          {
+            if (list[k] > target)
+              break;
+
+            if (list[k] < target)
+              continue;
+
+            if (!set.Add(key))
+              break;
+
+            result.Add(new List<int> { list[i], list[j], list[k] });
+            break;
+          }
+        }
+      }
+
       return result;
     }
   }
