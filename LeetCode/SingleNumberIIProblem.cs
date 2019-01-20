@@ -10,15 +10,19 @@ namespace LeetCode
       for (int i = 0; i < nums.Length; i++)
       {
         if (dic.ContainsKey(nums[i]))
-          dic[nums[i]]++;
+        {
+          if (dic[nums[i]] == 2)
+            dic.Remove(nums[i]);
+          else
+            dic[nums[i]]++;
+        }
         else
           dic.Add(nums[i], 1);
       }
 
       foreach (var kvp in dic)
       {
-        if (kvp.Value == 1)
-          return kvp.Key;
+        return kvp.Key;
       }
 
       return -1;
