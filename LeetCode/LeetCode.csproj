@@ -111,6 +111,7 @@
     <Compile Include="PowerOfTwoProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RamsomNoteProblem.cs" />
     <Compile Include="RangeSumQueryImmutableProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayIIProblem.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayProblem.cs" />
