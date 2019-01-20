@@ -53,6 +53,7 @@
     <Compile Include="BinaryTreePathsProblem.cs" />
     <Compile Include="BinaryTreePostorderTraversalProblem.cs" />
     <Compile Include="CombinationsProblem.cs" />
+    <Compile Include="CombinationSum3Problem.cs" />
     <Compile Include="CombinationSumIIProblem.cs" />
     <Compile Include="CombinationSumProblem.cs" />
     <Compile Include="ContainsDuplicateIIProblem.cs" />
