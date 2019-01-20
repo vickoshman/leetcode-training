@@ -82,6 +82,7 @@
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />
     <Compile Include="InvertBinaryTreeProblem.cs" />
     <Compile Include="IsBalancedTreeProblem.cs" />
+    <Compile Include="IsIsomorphicStringsProblem.cs" />
     <Compile Include="LargestNumberProblem.cs" />
     <Compile Include="LengthOfLastWordProblem.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
