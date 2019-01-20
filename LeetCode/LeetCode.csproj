@@ -142,6 +142,7 @@
     <Compile Include="SumRootToLeafNumbersProblem.cs" />
     <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="SymmetricTreeProblem.cs" />
+    <Compile Include="ThreeSumClosestProblem.cs" />
     <Compile Include="ThreeSumProblem.cs" />
     <Compile Include="ToLowerCaseProblem.cs" />
     <Compile Include="TopKFrequentElementsProblem.cs" />
