@@ -8,24 +8,24 @@ namespace LeetCode
     public string ReverseWords(string s)
     {
       var stack = new Stack<string>();
-      string word = "";
+      var word = new StringBuilder();
       for (int i = 0; i < s.Length; i++)
       {
         if (s[i] == ' ')
         {
-          if (string.IsNullOrEmpty(word))
+          if (word.Length == 0)
             continue;
 
-          stack.Push(word);
-          word = "";
+          stack.Push(word.ToString());
+          word.Clear();
           continue;
         }
 
-        word += s[i];
+        word.Append(s[i]);
       }
 
-      if (!string.IsNullOrEmpty(word))
-        stack.Push(word);
+      if (word.Length != 0)
+        stack.Push(word.ToString());
 
       var result = new StringBuilder();
 
