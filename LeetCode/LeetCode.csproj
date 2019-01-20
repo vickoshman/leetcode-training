@@ -128,6 +128,7 @@
     <Compile Include="SearchInRotatedSortedArrayProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
+    <Compile Include="SingleNumberIIProblem.cs" />
     <Compile Include="SingleNumberProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="SubsetsIIProblem.cs" />
