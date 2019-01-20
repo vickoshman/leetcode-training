@@ -63,6 +63,7 @@
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
+    <Compile Include="FindMinimumInRotatedSortedArrayProblem.cs" />
     <Compile Include="FindPeakElementProblem.cs" />
     <Compile Include="FindTheDifferenceProblem.cs" />
     <Compile Include="FirstBadVersionProblem.cs" />
