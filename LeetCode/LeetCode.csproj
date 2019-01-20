@@ -45,6 +45,7 @@
     <Compile Include="AddDigitsProblem.cs" />
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
+    <Compile Include="BestTimeToBuyAndSellStockIIProblem.cs" />
     <Compile Include="BestTimeToBuyAndSellStockProblem.cs" />
     <Compile Include="BinaryTreeInorderTraversalProblem.cs" />
     <Compile Include="BinaryTreeLevelOrderTraversalIIProblem.cs" />
@@ -140,6 +141,7 @@
     <Compile Include="Trees\BinaryTreeBuilder.cs" />
     <Compile Include="Trees\TreeExtensions.cs" />
     <Compile Include="Trees\TreeNode.cs" />
+    <Compile Include="TriangleProblem.cs" />
     <Compile Include="TwoSumInputArrayIsSortedProblem.cs" />
     <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidPalindromeProblem.cs" />
