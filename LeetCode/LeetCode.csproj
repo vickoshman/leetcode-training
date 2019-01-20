@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBinaryProblem.cs" />
     <Compile Include="AddDigitsProblem.cs" />
     <Compile Include="AddOneProblem.cs" />
     <Compile Include="AddTwoNumbersProblem.cs" />
