@@ -92,6 +92,7 @@
     <Compile Include="MaximumSubarrayProblem.cs" />
     <Compile Include="MergeKSortedListsProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="MinSubArrayLenProblem.cs" />
     <Compile Include="MissingNumberProblem.cs" />
     <Compile Include="MoveZeroesProblem.cs" />
     <Compile Include="MultiplyStringsProblem.cs" />
@@ -131,6 +132,7 @@
     <Compile Include="ScrambleStringProblem.cs" />
     <Compile Include="SearchInRotatedSortedArrayProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
+    <Compile Include="ShuffleAnArrayProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
     <Compile Include="SingleNumberIIProblem.cs" />
     <Compile Include="SingleNumberProblem.cs" />

@@ -9,13 +9,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var triangle = new List<IList<int>>()
-      {
-        new List<int>{ -1 },
-        new List<int>{ 2, 3 },
-        new List<int>{ 1, -1, -3 },
-      };
-      new TriangleProblem().MinimumTotal(triangle);
+      new MinSubArrayLenProblem().MinSubArrayLen(213, new int[] { 12, 28, 83, 4, 25, 26, 25, 2, 25, 25, 25, 12 });
 
       Console.WriteLine();
       Console.ReadKey();
