@@ -13,8 +13,8 @@ namespace LeetCode
       int cary = 0;
       for (int i = 0; i < length + 1; i++)
       {
-        var first = i >= a.Length ? 0 : int.Parse(a[a.Length - i - 1].ToString());
-        var second = i >= b.Length ? 0 : int.Parse(b[b.Length - i - 1].ToString());
+        var first = i >= a.Length ? 0 : a[a.Length - i - 1] == '1' ? 1 : 0;
+        var second = i >= b.Length ? 0 : b[b.Length - i - 1] == '1' ? 1: 0;
 
         var sum = first + second + cary;
         if (sum == 0 || sum == 1)

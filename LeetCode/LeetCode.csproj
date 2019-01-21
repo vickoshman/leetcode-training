@@ -100,6 +100,7 @@
     <Compile Include="MaximumSubarrayProblem.cs" />
     <Compile Include="MergeKSortedListsProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
+    <Compile Include="MinStackProblem.cs" />
     <Compile Include="MinSubArrayLenProblem.cs" />
     <Compile Include="MissingNumberProblem.cs" />
     <Compile Include="MoveZeroesProblem.cs" />
