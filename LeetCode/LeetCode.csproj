@@ -61,6 +61,7 @@
     <Compile Include="ContainsDuplicateProblem.cs" />
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
+    <Compile Include="CountCompleteTreeNodeProblem.cs" />
     <Compile Include="DeleteNodeInALinkedListProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="RemoveElementProblem.cs" />
     <Compile Include="RemoveLinkedListElementProblem.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListProblem.cs" />
+    <Compile Include="ReorderListProblem.cs" />
     <Compile Include="RestoreIpAddressesProblem.cs" />
     <Compile Include="ReverseLinkedListIIProblem.cs" />
     <Compile Include="ReverseStringProblem.cs" />
