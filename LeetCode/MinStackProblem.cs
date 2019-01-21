@@ -7,8 +7,8 @@ namespace LeetCode
     public class MinStack
     {
       private Stack<int> _stack;
-
       private List<int> _list;
+
       /** initialize your data structure here. */
       public MinStack()
       {
@@ -18,9 +18,11 @@ namespace LeetCode
 
       public void Push(int x)
       {
-        _list.Add(x);
         _stack.Push(x);
-        _list.Sort();
+        var res = _list.BinarySearch(x);
+        if (res < 0)
+          res = ~res;
+        _list.Insert(res, x);
       }
 
       public void Pop()
