@@ -77,6 +77,7 @@
     <Compile Include="FourSumProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
+    <Compile Include="GuessNumberHigherOrLowerProblem.cs" />
     <Compile Include="ImplementQueueUsingStacksProblem.cs" />
     <Compile Include="ImplementStackUsingQueuesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />

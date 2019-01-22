@@ -9,8 +9,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new RestoreIpAddressesProblem().RestoreIpAddresses(
-        "25525511135");
+      new GuessNumberHigherOrLowerProblem().guessNumber(2126753390);
 
       Console.WriteLine();
       Console.ReadKey();
