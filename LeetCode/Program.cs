@@ -9,7 +9,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new GuessNumberHigherOrLowerProblem().guessNumber(2126753390);
+      new FindMinimumInRotatedSortedArrayProblem().FindMin(new int[] { 5, 1, 2, 3, 4 });
 
       Console.WriteLine();
       Console.ReadKey();
