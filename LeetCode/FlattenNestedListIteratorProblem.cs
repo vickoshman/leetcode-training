@@ -61,7 +61,7 @@ namespace LeetCode
       {
         if (nest.IsInteger())
         {
-          _queue.Enqueue(nest.GetInteger());
+          //_queue.Enqueue(nest.GetInteger());
           return;
         }
 
