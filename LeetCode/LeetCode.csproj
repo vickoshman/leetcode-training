@@ -75,6 +75,7 @@
     <Compile Include="FirstBadVersionProblem.cs" />
     <Compile Include="FirstMissingPositiveProblem.cs" />
     <Compile Include="FlattenBinaryTreeToLinkedListProblem.cs" />
+    <Compile Include="FlattenNestedListIteratorProblem.cs" />
     <Compile Include="FourSumProblem.cs" />
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
