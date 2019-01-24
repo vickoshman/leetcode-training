@@ -58,6 +58,7 @@
     <Compile Include="CombinationSum3Problem.cs" />
     <Compile Include="CombinationSumIIProblem.cs" />
     <Compile Include="CombinationSumProblem.cs" />
+    <Compile Include="ContainerWithMostWaterProblem.cs" />
     <Compile Include="ContainsDuplicateIIProblem.cs" />
     <Compile Include="ContainsDuplicateProblem.cs" />
     <Compile Include="ContiguousArrayProblem.cs" />
