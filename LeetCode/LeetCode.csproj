@@ -68,6 +68,7 @@
     <Compile Include="DeleteNodeInALinkedListProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
+    <Compile Include="FindAllNumberDisappearedInAnArrayProblem.cs" />
     <Compile Include="FindFirstAndLastPositionOfElementInSortedArrayProblem.cs" />
     <Compile Include="FindMinimumInRotatedSortedArrayProblem.cs" />
     <Compile Include="FindPeakElementProblem.cs" />
