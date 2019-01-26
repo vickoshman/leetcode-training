@@ -104,6 +104,7 @@
     <Compile Include="LowestCommonAncestorOfABinarySearchTreeProblem.cs" />
     <Compile Include="MajorityElementProblem.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeProblem.cs" />
+    <Compile Include="MaximumProductSubarrayProblem.cs" />
     <Compile Include="MaximumSubarrayProblem.cs" />
     <Compile Include="MergeKSortedListsProblem.cs" />
     <Compile Include="MergeTwoSortedListsProblem.cs" />
