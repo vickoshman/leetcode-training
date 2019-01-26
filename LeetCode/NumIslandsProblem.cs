@@ -7,22 +7,21 @@ namespace LeetCode
   {
     public int NumIslands(char[,] grid)
     {
-      var visited = new HashSet<int>();
       int islands = 0;
 
       for (int i = 0; i < grid.GetLength(0); i++)
         for (int j = 0; j < grid.GetLength(1); j++)
         {
-          int before = visited.Count;
-          Traverse(grid, i, j, visited);
-          if (before != visited.Count)
+          if (grid[i, j] == '1')
             islands++;
+
+          Traverse(grid, i, j);
         }
 
       return islands;
     }
 
-    private void Traverse(char[,] grid, int i, int j, HashSet<int> visited)
+    private void Traverse(char[,] grid, int i, int j)
     {
       if (i < 0 || i >= grid.GetLength(0))
         return;
@@ -30,17 +29,16 @@ namespace LeetCode
       if (j < 0 || j >= grid.GetLength(1))
         return;
 
-      if (grid[i, j] == '0')
+      if (grid[i, j] == '0' || grid[i, j] == 'x')
         return;
 
-      if (!visited.Add(i*1000000+j))
-        return;
+      grid[i, j] = 'x';
 
-      Traverse(grid, i - 1, j, visited);
-      Traverse(grid, i + 1, j, visited);
+      Traverse(grid, i - 1, j);
+      Traverse(grid, i + 1, j);
 
-      Traverse(grid, i, j - 1, visited);
-      Traverse(grid, i, j + 1, visited);
+      Traverse(grid, i, j - 1);
+      Traverse(grid, i, j + 1);
     }
   }
 }
