@@ -146,11 +146,13 @@
     <Compile Include="ReverseWordsInAStringProblem.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="MergeSortedArrayProblem.cs" />
+    <Compile Include="RotateArrayProblem.cs" />
     <Compile Include="RotateImageProblem.cs" />
     <Compile Include="RotateListProblem.cs" />
     <Compile Include="ScrambleStringProblem.cs" />
     <Compile Include="SearchInRotatedSortedArrayProblem.cs" />
     <Compile Include="SearchInsertPositionProblem.cs" />
+    <Compile Include="SetMatrixZeroesProblem.cs" />
     <Compile Include="ShuffleAnArrayProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
     <Compile Include="SingleNumberIIProblem.cs" />
@@ -158,6 +160,7 @@
     <Compile Include="StringToIntegerProblem.cs" />
     <Compile Include="SubsetsIIProblem.cs" />
     <Compile Include="SubsetsProblem.cs" />
+    <Compile Include="SummaryRangesProblem.cs" />
     <Compile Include="SumRootToLeafNumbersProblem.cs" />
     <Compile Include="SwapNodesInPairsProblem.cs" />
     <Compile Include="SymmetricTreeProblem.cs" />
