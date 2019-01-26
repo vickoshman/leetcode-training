@@ -155,6 +155,7 @@
     <Compile Include="SetMatrixZeroesProblem.cs" />
     <Compile Include="ShuffleAnArrayProblem.cs" />
     <Compile Include="SimplifyPathProblem.cs" />
+    <Compile Include="SingleNumberIIIProblem.cs" />
     <Compile Include="SingleNumberIIProblem.cs" />
     <Compile Include="SingleNumberProblem.cs" />
     <Compile Include="StringToIntegerProblem.cs" />
