@@ -9,12 +9,7 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      var head = new ListNode(4);
-      head.next = new ListNode(2);
-      head.next.next = new ListNode(1);
-      head.next.next.next = new ListNode(3);
-
-      new InsertationSortListProblem().InsertionSortList(head);
+      new MultiplyStringsProblem().Multiply("9", "9");
 
       Console.WriteLine();
       Console.ReadKey();
