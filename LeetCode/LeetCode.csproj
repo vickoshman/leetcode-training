@@ -83,6 +83,7 @@
     <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="GuessNumberHigherOrLowerProblem.cs" />
     <Compile Include="HIndexProblem.cs" />
+    <Compile Include="HouseRobberProblem.cs" />
     <Compile Include="ImplementQueueUsingStacksProblem.cs" />
     <Compile Include="ImplementStackUsingQueuesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />

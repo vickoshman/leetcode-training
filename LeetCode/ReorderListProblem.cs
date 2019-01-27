@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Security.Policy;
 
 namespace LeetCode
 {
@@ -6,47 +7,59 @@ namespace LeetCode
   {
     public void ReorderList(ListNode head)
     {
-      if (head == null)
+      if (head == null || head.next == null)
         return;
 
-      ListNode mid;
-      var fast = head;
-      var slow = head;
-
-      while (fast != null && fast.next != null)
-      {
-        fast = fast.next.next;
-        slow = slow.next;
-      }
-
-      mid = slow.next;
-      slow.next = null;
-
-      var l1 = head;
-
+      int count = 0;
       var current = head;
-      ListNode prev = null;
       while (current != null)
       {
-        var nextNode = current.next;
-        current.next = prev;
-        prev = current;
-        current = nextNode;
+        count++;
+        current = current.next;
       }
 
-      var l2 = prev;
-
-      while (l2 != null)
+      int index = 1;
+      var prev = head;
+      current = head.next;
+      while (current != null && count %2 == 0 ? index < count / 2 : index < count / 2 + 1)
       {
-        var n1 = l1.next;
-        var n2 = l2.next;
+        ListNode prevRight = null;
+        var node = NodeAt(head, count - 1, ref prevRight);
+        prevRight.next = node.next;
 
-        l1.next = l2;
-        l2.next = n1;
+        prev.next = node;
+        node.next = current;
 
-        l1 = n1;
-        l2 = n2;
+        prev = current;
+        current = current.next;
+        index++;
       }
+    }
+
+    private ListNode NodeAt(ListNode head, int index, ref ListNode prev)
+    {
+      int count = 0;
+      var current = head;
+      while (count < index)
+      {
+        count++;
+        prev = current;
+        current = current.next;
+      }
+
+      return current;
+    }
+
+    private void Swap(ListNode prevNode1, ListNode node1, ListNode prevNode2, ListNode node2)
+    {
+      prevNode2.next = node1;
+
+      if (prevNode1 != null)
+        prevNode1.next = node2;
+
+      var tmp = node1.next;
+      node1.next = node2.next;
+      node2.next = tmp;
     }
   }
 }
