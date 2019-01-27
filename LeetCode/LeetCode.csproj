@@ -82,9 +82,11 @@
     <Compile Include="GenerateParenthesesProblem.cs" />
     <Compile Include="GroupAnagramsProblem.cs" />
     <Compile Include="GuessNumberHigherOrLowerProblem.cs" />
+    <Compile Include="HIndexProblem.cs" />
     <Compile Include="ImplementQueueUsingStacksProblem.cs" />
     <Compile Include="ImplementStackUsingQueuesProblem.cs" />
     <Compile Include="ImplementStrStrProblem.cs" />
+    <Compile Include="InsertationSortListProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysIIProblem.cs" />
     <Compile Include="IntersectionOfTwoArraysProblem.cs" />
     <Compile Include="IntersectionOfTwoLinkedListsProblem.cs" />

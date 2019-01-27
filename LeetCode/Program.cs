@@ -9,9 +9,12 @@ namespace LeetCode
   {
     static void Main(string[] args)
     {
-      new SetMatrixZeroesProblem().SetZeroes(new int[,] {
-        { 0 },  { 1 }
-      });
+      var head = new ListNode(4);
+      head.next = new ListNode(2);
+      head.next.next = new ListNode(1);
+      head.next.next.next = new ListNode(3);
+
+      new InsertationSortListProblem().InsertionSortList(head);
 
       Console.WriteLine();
       Console.ReadKey();
