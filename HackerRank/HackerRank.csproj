@@ -45,8 +45,10 @@
   <ItemGroup>
     <Compile Include="CamelCaseProblem.cs" />
     <Compile Include="HighestValuePolinfromeProblem.cs" />
+    <Compile Include="MigratoryBirdsProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepeatedStringProblem.cs" />
     <Compile Include="SockMerchantProblem.cs" />
   </ItemGroup>
   <ItemGroup>
