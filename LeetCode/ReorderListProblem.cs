@@ -23,9 +23,7 @@ namespace LeetCode
       current = head.next;
       while (current != null && count %2 == 0 ? index < count / 2 : index < count / 2 + 1)
       {
-        ListNode prevRight = null;
-        var node = NodeAt(head, count - 1, ref prevRight);
-        prevRight.next = node.next;
+        var node = NodeAt(head, count - 1);
 
         prev.next = node;
         node.next = current;
@@ -36,9 +34,10 @@ namespace LeetCode
       }
     }
 
-    private ListNode NodeAt(ListNode head, int index, ref ListNode prev)
+    private ListNode NodeAt(ListNode head, int index)
     {
       int count = 0;
+      ListNode prev = null;
       var current = head;
       while (count < index)
       {
@@ -47,6 +46,7 @@ namespace LeetCode
         current = current.next;
       }
 
+      prev.next = null;
       return current;
     }
 

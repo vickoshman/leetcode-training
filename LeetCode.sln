@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToAlgorithms", "IntroductionToAlgorithms\IntroductionToAlgorithms.csproj", "{EA212969-A8A1-4D07-8028-AAB1DCA20BA1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Preps", "Preps\Preps.csproj", "{040D94B5-C200-4901-AAFE-830622F3B59F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRank", "HackerRank\HackerRank.csproj", "{3E279146-86F6-42C2-9568-4B33AAC1DE1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{EA212969-A8A1-4D07-8028-AAB1DCA20BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA212969-A8A1-4D07-8028-AAB1DCA20BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA212969-A8A1-4D07-8028-AAB1DCA20BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040D94B5-C200-4901-AAFE-830622F3B59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040D94B5-C200-4901-AAFE-830622F3B59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040D94B5-C200-4901-AAFE-830622F3B59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040D94B5-C200-4901-AAFE-830622F3B59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E279146-86F6-42C2-9568-4B33AAC1DE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E279146-86F6-42C2-9568-4B33AAC1DE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E279146-86F6-42C2-9568-4B33AAC1DE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E279146-86F6-42C2-9568-4B33AAC1DE1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
