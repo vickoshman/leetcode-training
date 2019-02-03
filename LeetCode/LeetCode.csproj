@@ -65,6 +65,8 @@
     <Compile Include="ConvertSortedArrayToBinarySearchTreeProblem.cs" />
     <Compile Include="ConvertSortedListToBinarySearchTreeProblem.cs" />
     <Compile Include="CountCompleteTreeNodeProblem.cs" />
+    <Compile Include="CountNumbersWithUniqueDigitsProblem.cs" />
+    <Compile Include="DecodeWaysProblem.cs" />
     <Compile Include="DeleteNodeInALinkedListProblem.cs" />
     <Compile Include="DivideTwoIntegersProblem.cs" />
     <Compile Include="ExcelSheetColumnTitleProblem.cs" />
@@ -99,6 +101,7 @@
     <Compile Include="LetterCombinationsOfAPhoneNumberProblem.cs" />
     <Compile Include="LinkedListCycle.cs" />
     <Compile Include="LinkedListCycleProblem.cs" />
+    <Compile Include="LinkedListRandomNodeProblem.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefixProblem.cs" />
     <Compile Include="LongestConsecutiveSequenceProblem.cs" />
@@ -178,6 +181,7 @@
     <Compile Include="Trees\TreeNode.cs" />
     <Compile Include="TriangleProblem.cs" />
     <Compile Include="TwoSumInputArrayIsSortedProblem.cs" />
+    <Compile Include="UniqueBinarySearchTreesIIProblem.cs" />
     <Compile Include="ValidaAnagramProblem.cs" />
     <Compile Include="ValidPalindromeProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />

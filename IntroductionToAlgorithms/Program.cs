@@ -10,8 +10,6 @@ namespace IntroductionToAlgorithms
   {
     static void Main(string[] args)
     {
-      var arr = new int[] {5, 3, 8, 9, 10, 2, 4, 1};
-      new MergeSort().Sort(arr);
     }
   }
 }

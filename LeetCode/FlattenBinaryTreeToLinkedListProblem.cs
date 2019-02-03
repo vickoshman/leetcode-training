@@ -4,31 +4,24 @@ namespace LeetCode
 {
   public class FlattenBinaryTreeToLinkedListProblem
   {
-    private void Helper(TreeNode node, ref ListNode list)
+    private void Helper(TreeNode root, TreeNode current)
     {
-      if (list == null)
-        list = new ListNode(node.val);
-      else
-        list.next = new ListNode(node.val);
+      if (current == null)
+        return;
 
-      if (node.left != null)
-        Helper(node.left, ref list);
+      Helper(root.right, current.left);
 
-      if (node.right != null)
-        Helper(node.right, ref list);
+      var tmp = root.right;
+      root.right = current;
+      current.right = tmp;
+      current.left = null;
+
+      Helper(root.right, current.right);
     }
 
     public void Flatten(TreeNode root)
     {
-      ListNode list = null;
-      Helper(root, ref list);
-
-      var current = list.next;
-      while (current != null)
-      {
-        root.right = new TreeNode(current.val);
-        current = current.next;
-      }
+      Helper(root, root);
     }
   }
 }

@@ -3,70 +3,86 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Linq;
+using System.Text;
 
 namespace LeetCode
 {
   public class GroupAnagramsProblem
   {
+    public IList<IList<string>> GroupAnagrams2(string[] strs)
+    {
+      if (strs == null || strs.Length == 0)
+        return null;
+
+      var dictionary = new Dictionary<string, IList<string>>();
+      for (int i = 0; i < strs.Length; i++)
+      {
+        var word = strs[i];
+        var chars = strs[i].ToCharArray();
+        Array.Sort(chars);
+
+        var key = new string(chars);
+        if (dictionary.ContainsKey(key))
+          dictionary[key].Add(word);
+        else
+          dictionary.Add(key, new List<string> { word });
+      }
+
+      return dictionary.Values.ToList();
+    }
+
     public IList<IList<string>> GroupAnagrams(string[] strs)
     {
       if (strs == null || strs.Length == 0)
         return null;
 
-      var anagramsByLength = new Dictionary<int, List<IList<string>>>();
-
+      var dictionary = new Dictionary<string, IList<string>>();
       for (int i = 0; i < strs.Length; i++)
       {
-        var currentLength = strs[i].Length;
+        var word = strs[i];
 
-        if (!anagramsByLength.ContainsKey(currentLength))
-        {
-          var group = new List<IList<string>>();
-          group.Add(new List<string> { strs[i] });
-
-          anagramsByLength.Add(currentLength, group);
-          continue;
-        }
-
-        IList<string> toAdd = null;
-        foreach (var group in anagramsByLength[currentLength])
-        {
-          if (IsAnagram(strs[i], @group[0]))
-          {
-            toAdd = @group;
-            break;
-          }
-        }
-
-        if (toAdd == null)
-        {
-          anagramsByLength[currentLength].Add(new List<string>() { strs[i] });
-        }
+        var key = BuildSimpleKey(word);
+        if (dictionary.ContainsKey(key))
+          dictionary[key].Add(word);
         else
-        {
-          toAdd.Add(strs[i]);
-        }
+          dictionary.Add(key, new List<string> { word });
       }
 
-      var result = new List<IList<string>>();
-
-      foreach (var kvp in anagramsByLength)
-        result.AddRange(kvp.Value);
-
-      return result;
+      return dictionary.Values.ToList();
     }
 
-    private bool IsAnagram(string s, string s1)
+    private string BuildSimpleKey(string s)
     {
-      var set = new List<char>();
-      foreach (char c in s)
-        set.Add(c);
-      foreach (char c in s1)
+      var arr = new int[26];
+      foreach (var c in s)
+        arr[c - 'a']++;
+
+      var sb = new StringBuilder();
+      for (int i = 0; i < arr.Length; i++)
       {
-        set.Remove(c);
+        if (arr[i] == 0)
+          continue;
+
+        sb.AppendFormat("{0}:{1}|", i, arr[i]);
       }
 
-      return set.Count == 0;
+      return sb.ToString();
+    }
+
+    private string BuildComplexKey(string s)
+    {
+      var charByCount = new Dictionary<int, int>();
+      foreach (var c in s)
+        if (charByCount.ContainsKey(c))
+          charByCount[c]++;
+        else
+          charByCount.Add(c, 1);
+
+      var sb = new StringBuilder();
+      foreach (var kvp in charByCount.OrderBy(kvp => kvp.Key))
+        sb.AppendFormat("{0}:{1}|", kvp.Key, kvp.Value);
+
+      return sb.ToString();
     }
   }
 }

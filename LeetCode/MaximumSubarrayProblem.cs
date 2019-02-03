@@ -5,24 +5,40 @@ namespace LeetCode
 {
   public class MaximumSubarrayProblem
   {
-    private int MaxSum(int[] nums, int start, int end, int max)
+    static int MaxCrossingSum(int[] arr, int l, int m, int h)
     {
-      if (start >= end)
-        return max;
-
-      int sum = nums[start];
-      for (int i = start + 1; i < end + 1; i++)
+      int sum = 0;
+      int leftSum = int.MinValue;
+      for (int i = m; i >= l; i--)
       {
-        sum += nums[i];
-        if (sum > max)
-          max = sum;
+        sum += arr[i];
+        if (sum > leftSum)
+          leftSum = sum;
       }
 
-      int mid = (start + end) / 2;
-      return Math.Max(Math.Max(
-        MaxSum(nums, start, mid, max),
-        MaxSum(nums, mid + 1, end, max)),
-        MaxSum(nums, start + 1, end - 1, max));
+      sum = 0;
+      int rightSum = int.MinValue;
+      for (int i = m + 1; i <= h; i++)
+      {
+        sum += arr[i];
+        if (sum > rightSum)
+          rightSum = sum;
+      }
+
+      return leftSum + rightSum;
+    }
+
+    static int MaxSubArraySum(int[] arr, int l, int h)
+    {
+      if (l == h)
+        return arr[l];
+
+      int m = (l + h) / 2;
+
+      return Math.Max(
+        Math.Max(MaxSubArraySum(arr, l, m),
+                 MaxSubArraySum(arr, m + 1, h)),
+                 MaxCrossingSum(arr, l, m, h));
     }
 
     public int MaxSubArray(int[] nums)
@@ -30,7 +46,16 @@ namespace LeetCode
       if (nums == null || nums.Length == 0)
         return 0;
 
-      return MaxSum(nums, 0, nums.Length - 1, int.MinValue);
+      var maxSoFar = nums[0];
+      var currentMax = nums[0];
+
+      for (int i = 0; i < nums.Length; i++)
+      {
+        currentMax = Math.Max(nums[i], currentMax + nums[i]);
+        maxSoFar = Math.Max(maxSoFar, currentMax);
+      }
+
+      return maxSoFar;
     }
   }
 }
