@@ -121,6 +121,7 @@
     <Compile Include="MultiplyStringsProblem.cs" />
     <Compile Include="MinimumDepthOfBinaryTreeProblem.cs" />
     <Compile Include="NimGameProblem.cs" />
+    <Compile Include="NumberOf1BitsProblem.cs" />
     <Compile Include="NumIslandsProblem.cs" />
     <Compile Include="OddEvenLinkedListProblem.cs" />
     <Compile Include="PalindomeLinkedListProblem.cs" />
