@@ -136,6 +136,7 @@
     <Compile Include="PermutationsProblem.cs" />
     <Compile Include="PermuteUniqueProblem.cs" />
     <Compile Include="PowerOfTwoProblem.cs" />
+    <Compile Include="ProductOfArrayExceptSelfProblem.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RamsomNoteProblem.cs" />
