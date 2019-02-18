@@ -188,6 +188,7 @@
     <Compile Include="ValidPalindromeProblem.cs" />
     <Compile Include="ValidParenthesesProblem.cs" />
     <Compile Include="ValidPerfectSquareProblem.cs" />
+    <Compile Include="ValidSudokuProblem.cs" />
     <Compile Include="WordPatternProblem.cs" />
     <Compile Include="WordSearchProblem.cs" />
     <Compile Include="ZigZagConversionProblem.cs" />

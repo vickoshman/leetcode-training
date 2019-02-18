@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace LeetCode
 {
@@ -17,31 +18,29 @@ namespace LeetCode
       {'9', new List<char> {'w', 'x', 'y', 'z'}}
     };
 
-    public void Backtrack(string digits, int digitIndex, char[] snippet, List<string> result)
+    private void Build(string digits, StringBuilder soFar, int from, List<string> result)
     {
-      if (digitIndex == digits.Length)
+      if (soFar.Length == digits.Length)
       {
-        result.Add(new string(snippet.ToArray()));
+        result.Add(soFar.ToString());
         return;
       }
 
-      var digit = digits[digitIndex];
-      var letters = dict[digit];
-      for (int i = 0; i < letters.Count; i++)
+      foreach (var c in dict[digits[from]])
       {
-        snippet[digitIndex] = letters[i];
-        Backtrack(digits, digitIndex + 1, snippet, result);
+        soFar.Append(c);
+        Build(digits, soFar, from + 1, result);
+        soFar.Remove(soFar.Length - 1, 1);
       }
     }
 
     public IList<string> LetterCombinations(string digits)
     {
-      var result = new List<string>();
-
       if (digits == null || digits.Length == 0)
-        return result;
-      
-      Backtrack(digits, 0, new char[digits.Length], result);
+        return new List<string>();
+
+      var result = new List<string>();
+      Build(digits, new StringBuilder(), 0, result);
       return result;
     }
   }

@@ -1,4 +1,6 @@
-﻿using System.Runtime.Remoting;
+﻿using System.Linq;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Messaging;
 
 namespace LeetCode
 {
@@ -6,52 +8,55 @@ namespace LeetCode
   {
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
     {
-      var firstNode = l1;
-      var secondNode = l2;
-
       int rem = 0;
-      
-      ListNode result = null;
-      ListNode current = null;
-      
-      while (firstNode != null || secondNode != null || rem > 0)
-      {
-        int first = 0;
-        if (firstNode != null)
-        {
-          first = firstNode.val;
-          firstNode = firstNode.next;
-        }
-        
-        int second = 0;
-        if (secondNode != null)
-        {
-          second = secondNode.val;
-          secondNode = secondNode.next;
-        }
+      ListNode res = null;
+      var res1 = res;
 
-        var sum = first + second + rem;
-        int currentValue = sum;
+      var cur1 = l1;
+      var cur2 = l2;
+
+      while (cur1 != null || cur2 != null)
+      {
+        int sum = cur1 == null ? 0 : cur1.val;
+        sum += cur2 == null ? 0 : cur2.val;
+        sum += rem;
+
         if (sum > 9)
         {
-          currentValue = sum % 10;
-        }
-        
-        rem = sum / 10;
-
-        if (result == null)
-        {
-          current = new ListNode(currentValue);
-          result = current;
+          rem = sum / 10;
+          sum = sum % 10;
         }
         else
         {
-          current.next = new ListNode(currentValue);
-          current = current.next;
+          rem = 0;
         }
+
+        if (res == null)
+        {
+          res = new ListNode(sum);
+          res1 = res;
+        }
+        else
+        {
+          res1.next = new ListNode(sum);
+          res1 = res1.next;
+        }
+
+        if (cur1 != null)
+          cur1 = cur1.next;
+
+        if (cur2 != null)
+          cur2 = cur2.next;
       }
 
-      return result;
+      if (rem == 0)
+        return res;
+
+      if (res1 == null)
+        return new ListNode(rem);
+
+      res1.next = new ListNode(rem);
+      return res;
     }
   }
 }
